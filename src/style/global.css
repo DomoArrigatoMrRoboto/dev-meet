@@ -263,10 +263,16 @@ body {
 .video-grid {
   position: fixed;
   inset: 0;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1920px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  z-index: -2;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .video-grid video {
@@ -316,6 +322,8 @@ body {
   flex-direction: column;
   gap: 20px;
   text-align: center;
+  opacity: 0.8;
+  animation: fadeInUp 1s ease forwards;
 }
 
 .login-container form h2 {
