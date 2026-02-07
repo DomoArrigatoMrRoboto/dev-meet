@@ -28,6 +28,8 @@ export default function Login({ onLogin }) {
         <video src="/videos/video2.mp4" autoPlay muted loop />
         <video src="/videos/video3.mp4" autoPlay muted loop />
         <video src="/videos/video4.mp4" autoPlay muted loop />
+        <video src="/videos/video5.mp4" autoPlay muted loop />
+        <video src="/videos/video6.mp4" autoPlay muted loop />
       </div>
 
       <div className="dynamic-bg" />
