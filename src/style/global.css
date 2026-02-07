@@ -268,7 +268,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
- grid-auto-rows: 1fr;
+  grid-auto-rows: 1fr;
   overflow: hidden;
   left: 50%;
   transform: translateX(-50%);
@@ -309,6 +309,19 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
+}
+
+.login-hero-text {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f0ebd8;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  z-index: 3;
+  pointer-events: none;
 }
 
 .login-container form {
@@ -390,6 +403,10 @@ body {
   .video-grid video:nth-child(n + 3) {
     display: none;
   }
+
+  .login-hero-text {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -408,5 +425,9 @@ body {
 
   .video-grid video:nth-child(n + 3) {
     display: none;
+  }
+
+  .login-hero-text {
+    font-size: 1.6rem;
   }
 }

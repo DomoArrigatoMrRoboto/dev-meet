@@ -32,6 +32,8 @@ export default function Login({ onLogin }) {
         <video src="/videos/video6.mp4" autoPlay muted loop />
       </div>
 
+      <div className="login-hero-text">Code. Connect. Innovate.</div>
+
       <div className="dynamic-bg" />
       <div className="login-container">
         <form onSubmit={handleSubmit}>
